@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- =========================
+       BASIC CONFIG
+  ========================== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =========================
+       SEO
+  ========================== -->
+  <title>Web Agency World | Professional Web & AI Agency Worldwide</title>
+  <meta name="description" content="Web Agency World is a global web and AI agency specializing in full-stack development, AI solutions, SaaS platforms, and immersive 3D web experiences.">
+  <meta name="keywords" content="Web Agency, AI Agency, Full Stack Development, SaaS, Three.js, 3D Web, Frontend, Backend">
+  <meta name="author" content="Web Agency World">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://webagencyworld.vercel.app">
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Web Agency World | Web & AI Solutions">
+  <meta property="og:description" content="We build scalable web, AI, and 3D solutions for startups and businesses worldwide.">
+  <meta property="og:url" content="https://webagencyworld.vercel.app">
+  <meta property="og:site_name" content="Web Agency World">
+
+  <!-- =========================
+       TWITTER
+  ========================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Agency World | Web & AI Solutions">
+  <meta name="twitter:description" content="High-performance web and AI products built to scale.">
+
+  <!-- =========================
+       ICONS
+  ========================== -->
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- =========================
+       FONTS (LIGHTWEIGHT)
+  ========================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- =========================
+       CORE CSS
+  ========================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- =========================
+       ICONS
+  ========================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+
+  <!-- =========================
+       ANIMATIONS (CHOOSE STACK)
+  ========================== -->
+
+  <!-- GSAP (High-end animations & scroll control) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+  <!-- AOS (simple reveal animations) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+
+  <!-- =========================
+       SLIDER (ONE ONLY)
+  ========================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
+  <!-- =========================
+       THREE.JS (3D / HERO / SHOWCASE)
+  ========================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js" defer></script>
+  <!-- =========================
+       CHARTS (DASHBOARDS ONLY)
+  ========================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js" defer></script>
+
+  <!-- =========================
+       ACCESSIBILITY
+  ========================== -->
+  <script src="https://cdn.userway.org/widget.js" data-account="HT6TEvmIy4" async></script>
+
+  <!-- =========================
+       LEGAL
+  ========================== -->
+  <!-- © 2025–2026 Web Agency World. All rights reserved. -->
+  <!-- Circular Process Bar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/circular-progress/0.2.3/circular-progress.min.js" integrity="sha512-NtvtpOzjKjJY0yqmOSOyFKhf++vQIn9TXj/ALdP9U/R9vT2gGW5T6nQJY5o653HfevWZ5WVaKjbE/SRYZbJbrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- End  -->
+<!-- Start typed.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<!-- End -->
+<!-- Start Counter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+<!-- End -->
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- End  -->
+<!-- Start Bootstrap -->
+<!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-sA+z9dS+VpD3QMS7k0A7RtgCKc5V8Et6Yd5X+S9H0+k="
+  crossorigin=""
+/>
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1jYh9+Y+jG5z7Amrt+w4UfU4z7pG8qHfDgX2xk/0="
+  crossorigin=""
+></script>
+</head>
+<body>
+  <header class="header flex-between container py-4">
+  
+  <!-- Logo -->
+  <a href="index.html" class="logo">Web Agency World</a>
+
+  <!-- Desktop Navigation -->
+  <nav class="nav-desktop">
+    <ul class="flex gap-6">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Hamburger -->
+  <button id="mobile-menu-toggle" class="hamburger">
+    <i class="fas fa-bars"></i>
+  </button>
+</header>
+<section id="hero">
+  <!-- Three.js Canvas -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Hero Content -->
+  <div class="container hero-content animate__animated animate__fadeInUp">
+    <h1>
+      Welcome to <span class="typed-text"></span>
+    </h1>
+    <p>We build innovative Web, AI, and 3D solutions worldwide.</p>
+    <a href="services.html" class="button">Discover Our Services</a>
+
+    <!-- Example Font Awesome Icons -->
+    <div class="hero-icons flex-center gap-6 mt-6">
+      <i class="fa-brands fa-html5 fa-2x"></i>
+      <i class="fa-brands fa-css3-alt fa-2x"></i>
+      <i class="fa-brands fa-js fa-2x"></i>
+      <i class="fa-solid fa-robot fa-2x"></i>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator animate__animated animate__bounce">Scroll ↓</div>
+</section>
+
+<!-- ======================================
+     SECTION 2: SERVICES OVERVIEW
+====================================== -->
+<section id="services-overview" class="py-16 bg-gray-50">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Services</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      We provide professional Web, AI, Full Stack, and 3D solutions for clients worldwide.
+    </p>
+
+    <div class="services-grid grid-3 mt-12">
+      <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
+        <i class="fa-brands fa-html5 fa-3x service-icon"></i>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites with scalable architecture.</p>
+      </div>
+      <div class="service-card animate__animated animate__fadeInUp animate__delay-3s">
+        <i class="fa-solid fa-robot fa-3x service-icon"></i>
+        <h3>AI Solutions</h3>
+        <p>Machine learning, automation, and AI-powered applications.</p>
+      </div>
+      <div class="service-card animate__animated animate__fadeInUp animate__delay-4s">
+        <i class="fa-solid fa-cube fa-3x service-icon"></i>
+        <h3>3D & Visualization</h3>
+        <p>Interactive 3D experiences with Three.js and WebGL.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 3: ABOUT / MISSION
+====================================== -->
+<section id="about" class="py-16 bg-white">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">About Web Agency World</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      We are a team of passionate developers, designers, and AI engineers creating innovative solutions worldwide. Our mission is to empower businesses with cutting-edge technology and creative digital experiences.
+    </p>
+
+    <!-- Values / Icons -->
+    <div class="about-values flex-center gap-8 mt-12">
+      <div class="value-card animate__animated animate__fadeInUp animate__delay-2s">
+        <i class="fa-solid fa-lightbulb fa-2x value-icon"></i>
+        <h3>Innovation</h3>
+        <p>We deliver innovative solutions tailored to your needs.</p>
+      </div>
+      <div class="value-card animate__animated animate__fadeInUp animate__delay-3s">
+        <i class="fa-solid fa-handshake fa-2x value-icon"></i>
+        <h3>Trust</h3>
+        <p>Reliable partnership with transparent processes and communication.</p>
+      </div>
+      <div class="value-card animate__animated animate__fadeInUp animate__delay-4s">
+        <i class="fa-solid fa-rocket fa-2x value-icon"></i>
+        <h3>Performance</h3>
+        <p>Fast, scalable, and high-performing solutions for all platforms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 4: TEAM
+====================================== -->
+<section id="team" class="py-16 bg-gray-50">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Team</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Meet the talented professionals behind Web Agency World.
+    </p>
+
+    <div class="team-grid mt-12">
+      <!-- Member 1 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-2s">
+        <img src="es.jpg" alt="Erik Schmidt" class="team-photo">
+        <h3>Erik Schmidt</h3>
+        <p>CEO</p>
+      </div>
+      <!-- Member 2 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-2-5s">
+        <img src="josh.jpg" alt="Josh Cant" class="team-photo">
+        <h3>Josh Cant</h3>
+        <p>Designer / Frontend</p>
+      </div>
+      <!-- Member 3 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-3s">
+        <h3>Today</h3>
+        <p>Senior AI & Fullstack Engineer</p>
+      </div>
+      <!-- Member 4 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-3-5s">
+        <img src="mehul.jpg" alt="Mehul Makavana" class="team-photo">
+        <h3>Mehul Makavana</h3>
+        <p>Fullstack Developer</p>
+      </div>
+      <!-- Member 5 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-4s">
+        <img src="donte.jpg" alt="Donte" class="team-photo">
+        <h3>Donte</h3>
+        <p>Fullstack & AI</p>
+      </div>
+      <!-- Member 6 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-4-5s">
+        <img src="bd.jpg" alt="Yuyu Tanakai" class="team-photo">
+        <h3>Yuyu Tanakai</h3>
+        <p>React & 3D</p>
+      </div>
+      <!-- Member 7 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-5s">
+        <img src="pro.jpg" alt="Professor" class="team-photo">
+        <h3>Professor</h3>
+        <p>Student</p>
+      </div>
+      <!-- Member 8 -->
+      <div class="team-member animate__animated animate__fadeInUp animate__delay-5-5s">
+        <img src="mike.jpg" alt="Mike" class="team-photo">
+        <h3>Mike</h3>
+        <p>Fullstack Engineer</p>
+      </div>
+      <!-- Member 9 -->
+       <div class="team-member animate__animated animate__fadeInUp animate__delay-5-5s">
+        <img src="home-banner.png" alt="Saito" class="team-photo">
+        <h3>Saito</h3>
+        <p>Fullstack Engineer</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 5: PORTFOLIO / PROJECTS
+====================================== -->
+<section id="portfolio" class="py-16 bg-white">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Projects</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      A showcase of our latest Web, AI, and 3D projects.
+    </p>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid mt-12">
+      <!-- Project 1 -->
+      <div class="project-card animate__animated animate__fadeInUp animate__delay-2s">
+        <img src="images/project1.jpg" alt="Project 1" class="project-img">
+        <h3>Interactive Web App</h3>
+        <p>Responsive, modern web application.</p>
+        <div class="project-icons mt-2">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card animate__animated animate__fadeInUp animate__delay-3s">
+        <img src="images/project2.jpg" alt="Project 2" class="project-img">
+        <h3>AI Chatbot</h3>
+        <p>Machine learning powered assistant.</p>
+        <div class="project-icons mt-2">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card animate__animated animate__fadeInUp animate__delay-4s">
+        <img src="images/project3.jpg" alt="Project 3" class="project-img">
+        <h3>3D Visualization</h3>
+        <p>Immersive Three.js 3D experience.</p>
+        <div class="project-icons mt-2">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+      </div>
+
+      <!-- Weitere Projekte können hier hinzugefügt werden -->
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 6: FEATURES / SERVICES DETAIL
+====================================== -->
+<section id="features" class="py-16 bg-gray-50">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Our Expertise</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      We excel in multiple areas of technology to deliver top-quality solutions.
+    </p>
+
+    <!-- Feature Cards -->
+    <div class="features-grid mt-12">
+      <!-- Feature 1: Web -->
+      <div class="feature-card animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="circular-progress" data-percentage="95"></div>
+        <h3>Web Development</h3>
+        <p>Modern, responsive web applications.</p>
+      </div>
+
+      <!-- Feature 2: AI -->
+      <div class="feature-card animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="circular-progress" data-percentage="90"></div>
+        <h3>AI & Automation</h3>
+        <p>Machine learning and automation solutions.</p>
+      </div>
+
+      <!-- Feature 3: 3D & Visualization -->
+      <div class="feature-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div class="circular-progress" data-percentage="85"></div>
+        <h3>3D & Visualization</h3>
+        <p>Interactive 3D experiences with Three.js.</p>
+      </div>
+
+      <!-- Feature 4: Full Stack -->
+      <div class="feature-card animate__animated animate__fadeInUp animate__delay-5s">
+        <div class="circular-progress" data-percentage="92"></div>
+        <h3>Full Stack</h3>
+        <p>Frontend & Backend integration for scalable apps.</p>
+      </div>
+    </div>
+
+    <!-- Counters -->
+    <div class="counters mt-16 flex-center gap-8">
+      <div class="counter-card animate__animated animate__fadeInUp animate__delay-2s">
+        <h3 class="counter" data-target="120">0</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="counter-card animate__animated animate__fadeInUp animate__delay-3s">
+        <h3 class="counter" data-target="20">0</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="counter-card animate__animated animate__fadeInUp animate__delay-4s">
+        <h3 class="counter" data-target="100">0</h3>
+        <p>Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 7: TESTIMONIALS / CLIENT FEEDBACK
+====================================== -->
+<section id="testimonials" class="py-16 bg-white">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">What Our Clients Say</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Feedback from our amazing clients around the world.
+    </p>
+
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid mt-12">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card animate__animated animate__fadeInUp animate__delay-2s">
+        <p>"Web Agency World delivered our project faster than expected with top-notch quality. Highly recommended!"</p>
+        <h4>- John Doe, CEO TechCorp</h4>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card animate__animated animate__fadeInUp animate__delay-3s">
+        <p>"The team is professional, creative, and very skilled in AI and web development."</p>
+        <h4>- Maria Smith, Founder AI Labs</h4>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card animate__animated animate__fadeInUp animate__delay-4s">
+        <p>"Our 3D project was implemented flawlessly and exceeded our expectations."</p>
+        <h4>- Alex Tan, Creative Studio</h4>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card animate__animated animate__fadeInUp animate__delay-5s">
+        <p>"Highly responsive team with strong expertise in Full Stack and modern technologies."</p>
+        <h4>- Lisa Chen, Startup Founder</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 8: CONTACT / CALL TO ACTION
+====================================== -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Get in Touch</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Have a project in mind? Contact us today!
+    </p>
+
+    <div class="contact-content mt-12 flex-center gap-8">
+      <!-- Contact Form (Getform.io) -->
+      <form
+        class="contact-form animate__animated animate__fadeInUp animate__delay-2s"
+        id="contactForm"
+        action="https://getform.io/f/bolzvyva"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+
+      <!-- Contact Info + Map -->
+      <div class="contact-info animate__animated animate__fadeInUp animate__delay-3s">
+        <h3>Contact Info</h3>
+        <p>Email: <a href="mailto:erik-1301@web.de">erik-1301@web.de</a></p>
+        <p>Phone: <a href="tel:+4915255681054">+4915255681054</a></p>
+        <p>Address: Munich, Germany</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 9: DISCORD COMMUNITY
+====================================== -->
+<section id="community" class="py-16 bg-indigo-50">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Join Our Community</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Connect with our team, ask questions, and collaborate with others on Discord.
+    </p>
+
+    <div class="community-cta mt-12 animate__animated animate__fadeInUp animate__delay-2s">
+      <a href="https://discord.gg/cBKTXyWW8" target="_blank" class="discord-button">
+        Join Our Discord
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 10: FAQ / HÄUFIG GESTELLTE FRAGEN
+====================================== -->
+<section id="faq" class="py-16 bg-white">
+  <div class="container text-center">
+    <h2 class="section-title animate__animated animate__fadeInUp">Frequently Asked Questions</h2>
+    <p class="section-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+      Answers to common questions about Web Agency World.
+    </p>
+
+    <div class="faq-accordion mt-12">
+      <!-- FAQ 1 -->
+      <div class="faq-item animate__animated animate__fadeInUp animate__delay-2s">
+        <button class="faq-question">What services do you offer?</button>
+        <div class="faq-answer">
+          <p>We provide Full Stack Web Development, AI solutions, 3D Visualization, WordPress, and more.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item animate__animated animate__fadeInUp animate__delay-3s">
+        <button class="faq-question">How can I contact you?</button>
+        <div class="faq-answer">
+          <p>You can contact us via our Contact Form, Email, Phone, or join our Discord community.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item animate__animated animate__fadeInUp animate__delay-4s">
+        <button class="faq-question">Do you offer AI integration?</button>
+        <div class="faq-answer">
+          <p>Yes, we offer AI-based solutions including automation, chatbots, and data-driven applications.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item animate__animated animate__fadeInUp animate__delay-5s">
+        <button class="faq-question">Can you handle 3D and visualization projects?</button>
+        <div class="faq-answer">
+          <p>Absolutely! We specialize in Three.js, WebGL, and interactive 3D experiences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================================
+     SECTION 12: FOOTER
+====================================== -->
+<footer id="footer" class="py-12 bg-gray-900 text-white">
+  <div class="container flex flex-wrap justify-between gap-8">
+    
+    <!-- Branding -->
+    <div class="footer-brand animate__animated animate__fadeInUp">
+      <h3>Web Agency World</h3>
+      <p>Professional Web Agency | Full Stack, AI, 3D & more</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links animate__animated animate__fadeInUp animate__delay-1s">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#community">Discord</a></li>
+       <li><a href="imprint.html">Imprint</a></li>
+       <li><a href="privacy.html">Privacy & Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact animate__animated animate__fadeInUp animate__delay-2s">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:erik-1301@web.de">erik-1301@web.de</a></p>
+      <p>Phone: <a href="tel:+491525681054">+49 123 456 7890</a></p>
+      <p>Address: Munich, Germany</p>
+    </div>
+
+    <!-- Social / Discord -->
+    <div class="footer-social animate__animated animate__fadeInUp animate__delay-3s">
+      <h4>Community</h4>
+      <a href="https://discord.gg/cBKTXyWW8" target="_blank" class="social-btn">Discord</a>
+      <a href="#" target="_blank" class="social-btn">LinkedIn</a>
+      <a href="#" target="_blank" class="social-btn">GitHub</a>
+    </div>
+    
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom text-center mt-8 border-t border-gray-700 pt-4 text-gray-400 animate__animated animate__fadeInUp animate__delay-4s">
+    &copy; 2025-2026 Web Agency World. All rights reserved.
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
